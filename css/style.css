@@ -2,8 +2,60 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: "JetBrains Mono", monospace;
 }
 
 .logo {
     max-width: 30px;
+}
+
+header,
+header p {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+header {
+    justify-content: space-between;
+    padding: 1.25em
+}
+
+header p {
+    gap: 0.5em;
+    margin: 0;
+}
+
+.hero-img {
+    max-width: 100%;
+    filter: brightness(37%);
+}
+
+.recent-posts-img {
+    max-width: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 1.25em;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-text {
+    color: whitesmoke;
+    position: absolute;
+    bottom: 1.25em;
+    left: 1.25em;
+    right: 1.25em;
+    text-shadow: -1px 0 black, 0 3px black, 0 1px black, 0 -1px black;
 }
