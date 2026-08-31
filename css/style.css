@@ -65,6 +65,14 @@ nav a {
     padding: 2em;
 }
 
+.recent-posts p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 .recent-posts-img {
     max-width: 100%;
     object-fit: cover;
@@ -72,10 +80,16 @@ nav a {
 
 .article-date {
     color: #9a9999;
+    font-size: .75em;
 }
 
 .article-text {
     color: #444444;
+    font-size: .75em;
+}
+
+.recent-posts h2 {
+    font-size: 1em;
 }
 
 .article-card:nth-child(n+4) {
@@ -100,5 +114,28 @@ footer {
     color: white;
     text-align: center;
     padding: 1em;
+}
+
+footer p {
+    font-size: .75em;
+}
+
+@media (min-width:500px) {
+    .hero {
+        height: 350px;
+    }
+    .hero-text {
+        max-width: 500px;
+        padding-left: 40px;
+        padding-bottom: 40px;
+    }
+    .recent-posts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2em;
+    }
+    .article-card:nth-child(n+4) {
+        display: block;
+    }
 }
 
