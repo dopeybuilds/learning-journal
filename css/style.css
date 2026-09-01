@@ -1,3 +1,7 @@
+
+
+/*Home Page*/
+
 html, 
 body {
     margin: 0;
@@ -137,5 +141,14 @@ footer p {
     .article-card:nth-child(n+4) {
         display: block;
     }
+}
+
+
+
+/*About Me*/
+
+.profile-pic {
+    border-radius: 50%;
+    max-width: 150px;
 }
 
