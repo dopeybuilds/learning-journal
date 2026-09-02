@@ -124,6 +124,60 @@ footer p {
     font-size: .75em;
 }
 
+
+
+
+/*About Me*/
+
+.profile-pic {
+    border-radius: 50%;
+    max-width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.about-me {
+    padding: 2em;
+    justify-content: center;
+}
+
+.about-me-text h1 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.commited-statement {
+    padding: 1.5em;
+}
+
+.commited-statement h2 {
+    font-weight: bold;
+}
+
+.commited-statement p {
+    color: #444444;
+    margin-bottom: 5em;
+}
+
+.recent-posts-heading {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.article-card {
+    padding: 4em;
+}
+
+.article-text {
+    font-size: 1.1em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
 @media (min-width:500px) {
     .hero {
         height: 350px;
@@ -141,14 +195,17 @@ footer p {
     .article-card:nth-child(n+4) {
         display: block;
     }
+    .about-me {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+    }
+    .about-me-text {
+        max-width: 500px;
+    }
+    .profile-pic {
+        margin: 0;
+    }
+    .commited-statement {}
 }
-
-
-
-/*About Me*/
-
-.profile-pic {
-    border-radius: 50%;
-    max-width: 150px;
-}
-
