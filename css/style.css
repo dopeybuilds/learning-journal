@@ -1,8 +1,6 @@
-
-
 /*Home Page*/
 
-html, 
+html,
 body {
     margin: 0;
     padding: 0;
@@ -28,6 +26,11 @@ header {
 header p {
     gap: 0.5em;
     margin: 0;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .hero-img {
@@ -124,9 +127,11 @@ footer p {
     font-size: .75em;
 }
 
-
-
-
+.article-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 /*About Me*/
 
 .profile-pic {
@@ -165,7 +170,7 @@ footer p {
 }
 
 .article-card {
-    padding: 4em;
+    padding: 0em;
 }
 
 .article-text {
@@ -177,6 +182,21 @@ footer p {
     overflow: hidden;
 }
 
+/*Post Page*/
+
+.post-intro {
+    padding: 4em;
+}
+.post-img {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.post-img-wrapper {
+    padding: 1em;
+}
+
+/*Media Query*/
 
 @media (min-width:500px) {
     .hero {
@@ -207,5 +227,18 @@ footer p {
     .profile-pic {
         margin: 0;
     }
-    .commited-statement {}
+    .post-intro {
+        max-width: 700px;
+        margin: 0 auto;
+        padding-bottom: 0em;
+    }
+    .commited-statement {
+        max-width: 900px;
+        margin: 0 auto;
+        padding-bottom: 0em;
+    }
+    .post-img-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
